@@ -1,8 +1,7 @@
 spring:
   application:
     name: spring-cloud-gateway-example
-server:
-  port: 8081
+
 eureka:
   instance:
     instance-id: inst001
