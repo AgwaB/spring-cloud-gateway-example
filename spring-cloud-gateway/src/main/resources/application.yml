@@ -5,11 +5,11 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: example-service-a
-          uri: lb://service-a
+        - id: service-a
+          uri: lb://example-service-a
           predicates:
-            - Path=/**
-        - id: example-service-b
-          uri: lb://service-b
+            - Path=/service-a/**
+        - id: service-b
+          uri: lb://example-service-b
           predicates:
-            - Path=/**
+            - Path=/service-b/**

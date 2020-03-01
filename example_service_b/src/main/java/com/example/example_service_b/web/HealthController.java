@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/service-b")
 public class HealthController {
     @GetMapping("/hello")
     public String hello() {
-        return "Hello it's service a";
+        return "Hello it's service b";
     }
 
     @GetMapping("/healthz")
